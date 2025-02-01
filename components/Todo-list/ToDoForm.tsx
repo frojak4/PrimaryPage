@@ -6,7 +6,7 @@ const ToDoForm = () => {
       <input
         type="text"
         name="task"
-        className="p-2 bg-lightGray border border-red rounded-lg focus:outline-none focus:ring-1 focus:ring-accent"
+        className="p-2 bg-lightGray border border-red rounded-lg focus:bg-lightestGray focus:outline-none focus:ring-1 focus:ring-accent"
       />
       <button type="submit" className="bg-red hover:bg-red/80 px-2 rounded-md">
         Add

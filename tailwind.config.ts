@@ -19,6 +19,7 @@ export default {
         accent: "#FF4500",
         mutedmidgray: "#3A3A44",
         lightestGray: "#4A4A4A",
+        secondaryText: "#7A7A7A",
       },
     },
   },
