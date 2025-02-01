@@ -18,6 +18,7 @@ export default {
         lightGray: "#2E2E2E",
         accent: "#FF4500",
         mutedmidgray: "#3A3A44",
+        lightestGray: "#4A4A4A",
       },
     },
   },
