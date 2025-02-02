@@ -8,7 +8,10 @@ const ToDoForm = () => {
         name="task"
         className="p-2 bg-lightGray border border-red rounded-lg focus:bg-lightestGray focus:outline-none focus:ring-1 focus:ring-accent"
       />
-      <button type="submit" className="bg-red hover:bg-red/80 px-2 rounded-md">
+      <button
+        type="submit"
+        className="bg-red hover:bg-red/80 px-2 rounded-md font-mono"
+      >
         Add
       </button>
     </form>

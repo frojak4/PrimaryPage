@@ -4,12 +4,12 @@ import { FaCheck } from "react-icons/fa";
 
 const HabitTrackItem = ({ checked }: { checked: boolean }) => {
   return (
-    <form className="border border-darkGray bg-gray rounded-xl mx-2 h-32 w-48 flex flex-col shadow-md">
+    <form className="border border-darkGray bg-gray rounded-xl mx-2 h-32 md:w-48 w-40 flex flex-col shadow-md font-mono">
       <p className="text-2xl p-3 text-secondaryText">Running</p>
       <div className="flex justify-between">
         <button
           type="submit"
-          className="group w-10 h-10 border-2 border-darkGray bg-lightestGray ml-4 text-3xl flex justify-center items-center"
+          className="group w-10 h-10 border-2 border-darkGray bg-lightestGray ml-6 text-3xl flex justify-center items-center"
         >
           {checked ? (
             <FaCheck className="text-red" />

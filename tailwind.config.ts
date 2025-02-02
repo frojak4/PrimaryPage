@@ -19,7 +19,12 @@ export default {
         accent: "#FF4500",
         mutedmidgray: "#3A3A44",
         lightestGray: "#4A4A4A",
-        secondaryText: "#7A7A7A",
+        secondaryText: "#8A8A8A",
+      },
+      fontFamily: {
+        sans: ["var(--font-caveat)"],
+        mono: ["var(--font-roboto-mono)"],
+        hand: ["var(--font-caveat)"],
       },
     },
   },

@@ -14,7 +14,7 @@ const ToDoItem = () => {
   );
 
   return (
-    <div className="m-2 w-11/12 p-2 group rounded-md bg-darkGray text-center flex justify-between hover:shadow-md">
+    <div className="m-2 w-11/12 p-2 group rounded-md bg-darkGray text-center flex justify-between hover:shadow-md font-mono">
       <form action={completeAction}>
         <button type="submit">ToDoItem</button>
       </form>
