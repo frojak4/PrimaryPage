@@ -1,13 +1,38 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { FaPlus } from "react-icons/fa";
+import Modal from "../Modal";
+import AddHabitModal from "./AddHabitModal";
 
 const AddHabit = () => {
+  const [open, setOpen] = useState<boolean>(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
-    <button className="border group border-darkGray bg-gray rounded-xl mx-2 h-32 md:w-48 w-40 shadow-md font-mono flex justify-center items-center">
-      <p className="text-4xl text-secondaryText group-hover:text-white/65">
-        <FaPlus />
-      </p>
-    </button>
+    <>
+      <button
+        onClick={handleOpen}
+        className="border group border-darkGray bg-gray rounded-xl mx-2 h-32 md:w-48 w-40 shadow-md font-mono flex justify-center items-center"
+      >
+        <p className="text-4xl text-secondaryText group-hover:text-white/65">
+          <FaPlus />
+        </p>
+      </button>
+
+      {open && (
+        <Modal close={handleClose}>
+          <AddHabitModal />
+        </Modal>
+      )}
+    </>
   );
 };
 

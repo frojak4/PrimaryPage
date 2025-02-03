@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Notepad = () => {
-  const [page, setPage] = useState<number>(0);
+  const [page, setPage] = useState<number>(1);
 
   const handlePageBack = () => {
     if (page > 0) {
@@ -24,7 +24,7 @@ const Notepad = () => {
           type="button"
           onClick={handlePageBack}
           className="hover:text-white/65 disabled:text-secondaryText/60"
-          disabled={page <= 0}
+          disabled={page <= 1}
         >
           <IoIosArrowBack />
         </button>

@@ -36,6 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${robotoMono.variable} ${caveat.variable} antialiased`}>
+        <div id="portal" />
         <Header />
         {children}
       </body>
