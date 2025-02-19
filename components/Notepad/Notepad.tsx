@@ -18,7 +18,7 @@ const Notepad = () => {
   };
 
   return (
-    <form className="m-8 p-4 bg-primary-content h-min rounded-xl shadow-lg font-sans text-2xl font-light flex flex-col">
+    <form className="m-8 p-4 bg-primary-content h-min rounded-xl shadow-lg font-sans text-2xl font-light flex flex-col order-5 md:order-none">
       <div className="flex text-2xl text-secondaryText pb-4">
         <button
           type="button"
