@@ -18,7 +18,7 @@ const Notepad = () => {
   };
 
   return (
-    <form className="m-8 p-4 bg-gray h-min rounded-xl shadow-lg font-sans text-2xl font-light flex flex-col">
+    <form className="m-8 p-4 bg-primary-content h-min rounded-xl shadow-lg font-sans text-2xl font-light flex flex-col">
       <div className="flex text-2xl text-secondaryText pb-4">
         <button
           type="button"
@@ -38,7 +38,7 @@ const Notepad = () => {
           <IoIosArrowForward />
         </button>
       </div>
-      <textarea className="h-96 w-80 rounded-md bg-lightGray resize-none p-2 border border-red focus:bg-lightestGray focus:outline-none focus:ring-1 focus:ring-accent" />
+      <textarea className="h-96 w-80 rounded-md bg-neutral resize-none p-2 border border-secondary focus:bg-neutral/80 focus:outline-none focus:ring-1 focus:ring-accent" />
     </form>
   );
 };

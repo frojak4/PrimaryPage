@@ -14,7 +14,7 @@ const ToDoItem = () => {
   );
 
   return (
-    <div className="m-2 w-11/12 p-2 group rounded-md bg-darkGray text-center flex justify-between hover:shadow-md font-mono">
+    <div className="m-2 w-11/12 p-2 group rounded-md bg-primary text-center flex justify-between hover:shadow-md font-mono">
       <form action={completeAction}>
         <button type="submit">ToDoItem</button>
       </form>
@@ -23,7 +23,7 @@ const ToDoItem = () => {
           type="submit"
           className="opacity-0 transition-opacity group-hover:opacity-100"
         >
-          <RxCross2 className="text-2xl text-red hover:text-accent" />
+          <RxCross2 className="text-2xl text-accent hover:text-accent/80 font-bold" />
         </button>
       </form>
     </div>

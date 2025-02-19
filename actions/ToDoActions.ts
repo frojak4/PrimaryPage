@@ -13,3 +13,12 @@ export const DeleteToDoAction = async (
 ) => {
   console.log("deleted action");
 };
+
+export const AddTodoAction = async (
+  previousState: unknown,
+  formData: FormData
+) => {
+  const Todo = formData.get("task");
+
+  console.log(`Added todo: ${Todo}`);
+};
