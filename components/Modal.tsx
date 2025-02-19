@@ -17,7 +17,7 @@ const Modal = ({ children, close }) => {
     ? createPortal(
         <div className="min-h-screen w-screen bg-black bg-opacity-60 transition-opacity place-items-center backdrop-blur-sm z-[999] fixed flex justify-center">
           <button onClick={close} className="fixed left-4 top-4 text-4xl">
-            <RxCross2 />
+            <RxCross2 className="hover:text-error" />
           </button>
           {children}
         </div>,

@@ -5,7 +5,7 @@ import React from "react";
 
 const DashboardPage = () => {
   return (
-    <div className="h-[90vh] flex flex-col justify-between">
+    <div className="h-[90vh] flex flex-col justify-between bg-base-100">
       <div className="flex justify-between md:flex-row flex-col items-center">
         <ToDoContainer />
         <div className="w-[80%] md:hidden border-t border-mutedmidgray mx-auto"></div>

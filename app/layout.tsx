@@ -34,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="night">
       <body className={`${robotoMono.variable} ${caveat.variable} antialiased`}>
         <div id="portal" />
         <Header />

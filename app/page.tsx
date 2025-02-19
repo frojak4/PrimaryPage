@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <div>
       <Link href={"/dashboard"}> Go to dashboard</Link>
+      <button className="btn-secondary">Hallo</button>
     </div>
   );
 }
