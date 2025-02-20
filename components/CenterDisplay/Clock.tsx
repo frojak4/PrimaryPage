@@ -10,7 +10,7 @@ const Clock = () => {
     setTime(time);
   };
   setInterval(UpdateTime);
-  return <div className="font-mono text-7xl pt-8 text-primary">{ctime}</div>;
+  return <h1 className="font-mono text-7xl pt-8 text-primary">{ctime}</h1>;
 };
 
 export default Clock;

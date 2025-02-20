@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Roboto_Mono, Caveat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import ThemeProvider from "@/components/Settings/ThemeProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,11 +35,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="night">
+    <html lang="en">
       <body className={`${robotoMono.variable} ${caveat.variable} antialiased`}>
         <div id="portal" />
         <Header />
         {children}
+        <ThemeProvider />
       </body>
     </html>
   );

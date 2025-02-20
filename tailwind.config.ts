@@ -7,7 +7,18 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   daisyui: {
-    themes: ["light", "coffee", "cupcake", "sunset", "dim", "night"],
+    themes: [
+      "retro",
+      "coffee",
+      "cupcake",
+      "sunset",
+      "dim",
+      "night",
+      "dracula",
+      "winter",
+      "nord",
+      "aqua",
+    ],
   },
   theme: {
     extend: {
