@@ -2,11 +2,14 @@
 import moment from "moment";
 import React, { useEffect, useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { useDateFormat } from "../Settings/DateFormatContext";
 
 const DatePicker = () => {
   const [date, setDate] = useState<Date | null>();
   const [formatDate, setFormatDate] = useState<string>("");
   const [onCurrentDate, setOnCurrentDate] = useState<boolean>(true);
+
+  const { dateFormat } = useDateFormat();
 
   useEffect(() => {
     setDate(new Date());
@@ -16,21 +19,24 @@ const DatePicker = () => {
     if (date === null) return;
 
     const today = new Date();
-
     const isCurrentDate = date?.toDateString() === today.toDateString();
     setOnCurrentDate(isCurrentDate);
   }, [date]);
 
   useEffect(() => {
-    /*const date = moment().format("MMMM Do");*/
-    const cdate = moment(date).calendar(null, {
-      sameDay: "[Today]",
-      lastDay: "[Yesterday]",
-      lastWeek: "dddd",
-      sameElse: "MMMM Do",
-    });
-    setFormatDate(cdate);
-  }, [date]);
+    if (dateFormat === "absolute") {
+      const cdate = moment(date).format("MMMM Do");
+      setFormatDate(cdate);
+    } else if (dateFormat === "relative") {
+      const cdate = moment(date).calendar(null, {
+        sameDay: "[Today]",
+        lastDay: "[Yesterday]",
+        lastWeek: "dddd",
+        sameElse: "MMMM Do",
+      });
+      setFormatDate(cdate);
+    }
+  }, [date, dateFormat]);
 
   const handleDateBack = () => {
     setDate((prevDate) => {

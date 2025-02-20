@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Roboto_Mono, Caveat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import ThemeProvider from "@/components/Settings/ThemeProvider";
+import DateFormatProvider from "@/components/Settings/DateFormatContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,9 +38,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${robotoMono.variable} ${caveat.variable} antialiased`}>
-        <div id="portal" />
-        <Header />
-        {children}
+        <DateFormatProvider>
+          <div id="portal" />
+          <Header />
+          {children}
+        </DateFormatProvider>
         <ThemeProvider />
       </body>
     </html>

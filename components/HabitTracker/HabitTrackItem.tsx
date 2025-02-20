@@ -8,7 +8,7 @@ const HabitTrackItem = ({ checked }: { checked: boolean }) => {
       <p className="text-2xl p-3 text-secondary">Running</p>
       <div className="flex justify-between">
         <button
-          type="submit"
+          type="button"
           className="group w-10 h-10 border-2 border-darkGray bg-neutral ml-6 text-3xl flex justify-center items-center"
         >
           {checked ? (

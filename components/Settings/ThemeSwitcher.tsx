@@ -29,13 +29,11 @@ const ThemeSwitcher = ({ close }) => {
     return null;
   }
 
-  /*"retro", "coffee", "cupcake!", "sunset!", "dim!", "night",
-      "dracula!",
-      ",winter?*/
-
   return (
     <div>
-      <h3 className="pt-4 pl-4 pb-2 font-semibold">Change Theme: </h3>
+      <h3 className="pt-4 pl-4 pb-2 font-semibold text-base-content">
+        Change Theme:{" "}
+      </h3>
       <div className="flex-wrap flex justify-center gap-2">
         {Themes.map((ctheme, i) => {
           return (
