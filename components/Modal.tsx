@@ -11,7 +11,7 @@ const Modal = ({ children, close }) => {
   useEffect(() => {
     ref.current = document.querySelector("#portal");
     setMounted(true);
-  });
+  }, []);
 
   return mounted
     ? createPortal(

@@ -20,7 +20,7 @@ const AddHabit = () => {
     <>
       <button
         onClick={handleOpen}
-        className="border group border-darkGray bg-primary-content rounded-xl mx-2 h-32 md:w-48 w-40 shadow-md font-mono flex justify-center items-center"
+        className="border group border-neutral bg-base-300 rounded-xl mx-2 h-32 md:w-48 w-40 shadow-md font-mono flex justify-center items-center"
       >
         <p className="text-4xl text-secondaryText group-hover:text-white/65">
           <FaPlus />

@@ -31,7 +31,7 @@ const ThemeSwitcher = ({ close }) => {
 
   return (
     <div>
-      <h3 className="pt-4 pl-4 pb-2 font-semibold text-base-content">
+      <h3 className="pt-4 pl-4 pb-2 font-semibold text-neutral-content">
         Change Theme:{" "}
       </h3>
       <div className="flex-wrap flex justify-center gap-2">

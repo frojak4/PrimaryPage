@@ -19,7 +19,7 @@ const DateFormatSetting = () => {
   };
 
   return (
-    <div className="text-base-content">
+    <div className="text-neutral-content">
       <h3 className="pt-4 pl-4 pb-2 font-semibold">Date Format: </h3>
       <form className="flex justify-center gap-8">
         <label className="label">

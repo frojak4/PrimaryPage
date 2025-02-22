@@ -17,7 +17,7 @@ const ToDoForm = () => {
       />
       <button
         type="submit"
-        className="bg-primary hover:bg-primary/80 px-2 rounded-md font-mono"
+        className="px-4 rounded-md font-mono btn btn-primary disabled:btn-disabled"
         disabled={isPending}
       >
         Add

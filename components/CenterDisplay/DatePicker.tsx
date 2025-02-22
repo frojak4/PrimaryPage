@@ -24,6 +24,7 @@ const DatePicker = () => {
   }, [date]);
 
   useEffect(() => {
+    if (!date) return;
     if (dateFormat === "absolute") {
       const cdate = moment(date).format("MMMM Do");
       setFormatDate(cdate);
